@@ -1,0 +1,125 @@
+:root {
+    background: linear-gradient(135deg, #f3efff 0%, #e9dfff 100%);
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 4.8rem;
+    color: #1705db;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h1 > span {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #b89fe8;
+}
+
+/* Main Container */
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Quiz Box Styling */
+.quiz-box {
+    background-color: #ffffff;
+    border-radius: 2rem;
+    padding: 4rem;
+    box-shadow: 0 8px 30px rgba(163, 145, 222, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    animation: fadeIn 1.2s ease-in-out;
+    z-index: 3;
+    position: relative;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Styling */
+.submit-btn {
+    font-size: 1.6rem;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 1.2rem;
+    margin: 1rem 0;
+    color: white;
+    background-color: #c2a4f1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(175, 150, 240, 0.15);
+}
+
+.submit-btn:hover {
+    background-color: #b293e0;
+}
+
+/* Centralizing the Start/Stop Buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem; /* Adds spacing between buttons */
+    margin-top: 2rem;
+}
+
+/* Sparkle Background */
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.15;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Code Styling */
+#code {
+    font-size: 2.4rem;
+    color: #8b6fc8;
+    margin-top: 2rem;
+    display: block;
+    font-weight: 600;
+}
+
+/* Logo Styling */
+.logo {
+    width: 80px;
+    margin-bottom: 2rem;
+}
